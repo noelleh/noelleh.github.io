@@ -602,23 +602,23 @@ section h3.section-subheading {
     }
 }
 
-.getintouchwithme {
+.team-member {
     text-align: center;
     margin-bottom: 50px
 }
 
-.getintouchwithme img {
+.team-member img {
     margin: 0 auto;
     border: 7px solid #fff
 }
 
-.getintouchwithme h4 {
+.team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
     text-transform: none
 }
 
-.getintouchwithme p {
+.team-member p {
     margin-top: 0
 }
 
