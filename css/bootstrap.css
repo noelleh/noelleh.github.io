@@ -5,10 +5,8 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 #team {
-  align-items: center;
-  justify-content: center;
-  left: 100%;
-  right: 100%;
+  width: 50%;
+  margin: 0px auto 0px auto;
 }
 html {
   font-family: sans-serif;
