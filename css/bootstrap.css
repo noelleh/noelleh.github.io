@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -2098,6 +2099,7 @@ pre code {
   }
   .col-lg-12 {
     width: 100%;
+    max-width: 100%;
   }
   .col-lg-11 {
     width: 91.66666667%;

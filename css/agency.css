@@ -314,8 +314,8 @@ section {
 
 section h2.section-heading {
     font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 section h3.section-subheading {
@@ -324,7 +324,7 @@ section h3.section-subheading {
     text-transform: none;
     font-style: italic;
     font-weight: 400;
-    margin-bottom: 75px
+    margin-bottom: 0px
 }
 
 @media (min-width:768px) {
@@ -840,3 +840,74 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136
 }
+
+
+
+/* Noelle add code here */
+
+section#aboutme {
+    background-color: #ffece5;
+    height: 850px;
+    padding-top: 50px;   
+}
+
+
+section#aboutme div.row {
+    padding-top: 40px;
+}
+
+section#aboutme div.intro-aboutme {
+    padding-top: 100px;
+}
+
+section#aboutme div.intro-aboutme p {
+    font-size: 18px;
+}
+
+section#portfolio {
+    background-color: #f2ccff;
+}
+
+
+.portfolio-link img:hover {
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.portfolio-link img:hover {
+    -webkit-filter: blur(3px);
+}
+
+span.text-content {
+    color: black;
+    text-align: center;
+}
+
+section#experience {
+    background-color: #ccccff;
+}
+
+section#hobbies {
+    height: 900px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: #ccd9ff;
+}
+
+.hobbies-img-horizontal {
+    height: 200px;
+    width: 300px;
+}
+
+.hobbies-img-vertical {
+    height: 300px;
+    width: 220px;
+}
+
+
+
+
