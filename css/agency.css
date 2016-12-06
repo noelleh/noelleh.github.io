@@ -309,13 +309,13 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0
+    padding: 30px 0
 }
 
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: -15px;
 }
 
 section h3.section-subheading {
@@ -325,12 +325,6 @@ section h3.section-subheading {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 0px
-}
-
-@media (min-width:768px) {
-    section {
-        padding: 150px 0
-    }
 }
 
 .service-heading {
@@ -847,17 +841,12 @@ body {
 
 section#aboutme {
     background-color: #ffece5;
-    height: 850px;
-    padding-top: 50px;   
+    height: auto;
 }
 
 
-section#aboutme div.row {
+section div.row {
     padding-top: 40px;
-}
-
-section#aboutme div.intro-aboutme {
-    padding-top: 100px;
 }
 
 section#aboutme div.intro-aboutme p {
@@ -868,26 +857,44 @@ section#portfolio {
     background-color: #f2ccff;
 }
 
+.portfolio-link img {
+    position: relative;
+    width: 100%;
+}
 
 .portfolio-link img:hover {
     -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-.portfolio-link img:hover {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     -webkit-filter: blur(3px);
 }
 
-span.text-content {
-    color: black;
-    text-align: center;
+.portfolio-item {
+    position: relative;
 }
+
+.portfolio-item h3 {
+    color: #a94dff;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    width: 100%;
+    margin: 0% 0% 0% -30%;
+    visibility: hidden;
+}
+
+.portfolio-item:hover h3 {
+    visibility: visible;
+}
+
 
 section#experience {
     background-color: #ccccff;
 }
+
 
 section#hobbies {
     height: 900px;
@@ -906,6 +913,181 @@ section#hobbies {
 .hobbies-img-vertical {
     height: 300px;
     width: 220px;
+}
+
+/* Animation Part */
+
+section#aboutme div div div {
+    position: relative;
+    -webkit-animation-name: topmove;  
+    -webkit-animation-duration: 2.5s;  
+    animation-name: topmove;
+    animation-duration: 2.5s; 
+}
+
+section#aboutme .team-member {
+    position: relative;
+    -webkit-animation-name: rightmove;  
+    -webkit-animation-duration: 2.5s;  
+    animation-name: rightmove;
+    animation-duration: 2.5s; 
+}
+
+section#aboutme .intro-aboutme {
+    position: relative;
+    -webkit-animation-name: leftmove;  
+    -webkit-animation-duration: 2.5s;  
+    animation-name: leftmove;
+    animation-duration: 2.5s; 
+}
+
+section#portfolio div div div {
+    position: relative;
+    -webkit-animation-name: topmove;  
+    -webkit-animation-duration: 2.5s;  
+    animation-name: topmove;
+    animation-duration: 2.5s; 
+}
+
+@-webkit-keyframes leftmove {
+    from {left: 150px;}
+    to {right: 0px;}
+}
+
+@keyframes leftmove {
+    from {left: 150px;}
+    to {left: 0px;}
+}
+
+@-webkit-keyframes rightmove {
+    from {right: 150px;}
+    to {right: 0px;}
+}
+
+@keyframes rightmove {
+    from {right: 150px;}
+    to {right: 0px;}
+}
+
+@-webkit-keyframes topmove {
+    from {bottom: 150px;}
+    to {bottom: 0px;}
+}
+
+@keyframes topmove {
+    from {bottom: 150px;}
+    to {bottom: 0px;}
+}
+
+/* Picture Section */
+@import "compass/css3";
+
+.hobby-list {
+  position: absolute;
+
+}
+.hobby-list li {
+    float: left;
+    height: 282px;
+    overflow: hidden;
+    padding: 0 1px 1px 0;
+    width: 282px;
+}
+.hobby-list li a:after {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY1ODk4MTY1MDNBQTExRTNBN0U2RjUyQkFDMTgxQjI1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY1ODk4MTY2MDNBQTExRTNBN0U2RjUyQkFDMTgxQjI1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjU4OTgxNjMwM0FBMTFFM0E3RTZGNTJCQUMxODFCMjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjU4OTgxNjQwM0FBMTFFM0E3RTZGNTJCQUMxODFCMjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6XrhZfAAAAiUlEQVR42qzT0QmAIBQFUJP8aYh2ah0XaYZogtzGJfrsdQUpi6z3tAtXUfHgjw0RqRiNbqogOs4GnVBbgii8xKAznbHhdZKGoUMdXWOlSDWULgK0lED3DS7UJ+f+SeZAnwgHYiFfEBt5g0RIDhqlSA46EM38HSs6oO7psM1c6lEv/cVV+QXZBRgAnat44PE4W1oAAAAASUVORK5CYII=');
+        bottom: 40px;
+        content: '';
+        display: block;
+        height: 17px;
+        opacity: 0;
+        position: absolute;
+        right: 40px;
+        width: 17px;
+        @include transform3d(translate3d(-10px,-10px,0));
+        @include transition(all 150ms ease-out);
+}
+  
+.hobby-list a,
+.hobby-list button {
+    color: hsl(0,0%,100%);
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.tile-primary-content,
+.tile-secondary-content {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+.tile-primary-content {
+    background-color: #a49058;
+}
+
+.tile-primary-content img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    max-height: 100%;
+}
+
+.extra {
+    text-align: center;
+    margin-top: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    font-size: 25px;
+
+    opacity: 0;
+}
+
+.tile-primary-content:hover img {
+    -webkit-filter: none;
+    filter: none;
+    transition: all 0.3s ease;
+}
+
+.tile-primary-content:hover .extra {
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+
+
+
+
+// Meta
+
+*, 
+*:before, 
+*:after {
+  -webkit-box-sizing: border-box; 
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: hsl(0,0%,14%);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 
