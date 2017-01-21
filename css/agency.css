@@ -250,9 +250,8 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em
     }
 }
-
 header {
-    background-image: url(https://scontent-sea1-1.xx.fbcdn.net/hphotos-ash2/t31.0-8/1273707_10201874560935644_1289881223_o.jpg);
+    background-image:url("/Users/noellehsieh/Desktop/noelleh.github.io/img/aboutme-background.jpg");
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -309,7 +308,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 30px 0
+    padding: 30px 0;
 }
 
 section h2.section-heading {
@@ -839,6 +838,17 @@ body {
 
 /* Noelle add code here */
 
+.divider-img {
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
 section#aboutme {
     background-color: #ffece5;
     height: auto;
@@ -898,11 +908,8 @@ section#experience {
 
 section#hobbies {
     height: 900px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    background-color: #ccd9ff;
+    padding: 0 0 0 0;
+    background-color: black;
 }
 
 .hobbies-img-horizontal {
@@ -984,27 +991,18 @@ section#portfolio div div div {
 
 .hobby-list {
   position: absolute;
-
+  left: -15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
+
 .hobby-list li {
     float: left;
-    height: 282px;
+    height: 291px;
     overflow: hidden;
+
     padding: 0 1px 1px 0;
-    width: 282px;
-}
-.hobby-list li a:after {
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY1ODk4MTY1MDNBQTExRTNBN0U2RjUyQkFDMTgxQjI1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY1ODk4MTY2MDNBQTExRTNBN0U2RjUyQkFDMTgxQjI1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjU4OTgxNjMwM0FBMTFFM0E3RTZGNTJCQUMxODFCMjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjU4OTgxNjQwM0FBMTFFM0E3RTZGNTJCQUMxODFCMjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6XrhZfAAAAiUlEQVR42qzT0QmAIBQFUJP8aYh2ah0XaYZogtzGJfrsdQUpi6z3tAtXUfHgjw0RqRiNbqogOs4GnVBbgii8xKAznbHhdZKGoUMdXWOlSDWULgK0lED3DS7UJ+f+SeZAnwgHYiFfEBt5g0RIDhqlSA46EM38HSs6oO7psM1c6lEv/cVV+QXZBRgAnat44PE4W1oAAAAASUVORK5CYII=');
-        bottom: 40px;
-        content: '';
-        display: block;
-        height: 17px;
-        opacity: 0;
-        position: absolute;
-        right: 40px;
-        width: 17px;
-        @include transform3d(translate3d(-10px,-10px,0));
-        @include transition(all 150ms ease-out);
+    width: 291px;
 }
   
 .hobby-list a,
@@ -1025,10 +1023,6 @@ section#portfolio div div div {
     right: 0;
     top: 0;
 }
-  
-.tile-primary-content {
-    background-color: #a49058;
-}
 
 .tile-primary-content img {
     -webkit-filter: grayscale(100%);
@@ -1044,9 +1038,7 @@ section#portfolio div div div {
     top: 0;
     left: 0;
     bottom: 0;
-
     font-size: 25px;
-
     opacity: 0;
 }
 
@@ -1060,10 +1052,6 @@ section#portfolio div div div {
     transition: all 0.3s ease;
     opacity: 1;
 }
-
-
-
-
 
 // Meta
 
