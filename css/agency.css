@@ -839,14 +839,14 @@ body {
 /* Noelle add code here */
 
 .divider-img {
-    background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    -o-background-size: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 section#aboutme {
@@ -902,7 +902,8 @@ section#experience {
 
 
 section#hobbies {
-    height: 900px;
+    min-height: 800px;
+    overflow: scroll;
     padding: 0 0 0 0;
     background-color: black;
 }
@@ -994,19 +995,19 @@ section#portfolio div div div {
 .hobby-list li {
     float: left;
     height: 291px;
-    overflow: hidden;
-
-    padding: 0 1px 1px 0;
     width: 291px;
+    overflow: hidden;
+    padding: 0 1px 1px 0;
+    
 }
   
 .hobby-list a,
 .hobby-list button {
     color: hsl(0,0%,100%);
     display: block;
+    width: 100%;
     height: 100%;
     position: relative;
-    width: 100%;
 }
 
 .tile-primary-content,
