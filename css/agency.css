@@ -868,36 +868,31 @@ section#portfolio {
 }
 
 .portfolio-link img {
+    -webkit-filter: none;
+    filter: none;
     position: relative;
     width: 100%;
 }
 
-.portfolio-link img:hover {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-filter: blur(3px);
+.portfolio-link:hover img {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
-.portfolio-item {
-    position: relative;
-}
-
-.portfolio-item h3 {
-    color: #a94dff;
-    font-size: 23px;
+.portfolio-item-heading {
+    text-align: center;
+    top: 45%;
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 47%;
-    width: 100%;
-    margin: 0% 0% 0% -30%;
-    visibility: hidden;
+    font-size: 25px;
+    color: #dd99ff;
+    opacity: 0;
 }
 
-.portfolio-item:hover h3 {
-    visibility: visible;
+.portfolio-item:hover .portfolio-item-heading {
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 
