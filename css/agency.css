@@ -863,6 +863,10 @@ section#aboutme div.intro-aboutme p {
     font-size: 18px;
 }
 
+section#technicalskills {
+    background-color: #CEE3F6
+}
+
 section#portfolio {
     background-color: #f2ccff;
 }
@@ -1075,8 +1079,6 @@ ul {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #CEE3F6;
-
 }
 
 p{
@@ -1094,8 +1096,8 @@ p{
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
-    -webkit-transition:0.4s linear;
     -moz-transition:0.4s linear;
+    -webkit-transition:0.4s linear;
     -ms-transition:0.4s linear;
     -o-transition:0.4s linear;
     transition:0.4s linear;
@@ -1110,7 +1112,7 @@ p{
     position:absolute;
     top:0;
     left:0;
-width:110px;
+    width:110px;
     font-weight:bold;
     font-size:13px;
     color:#ffffff;
