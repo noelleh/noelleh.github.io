@@ -903,7 +903,6 @@ section#experience {
 
 section#hobbies {
     min-height: 800px;
-    overflow: scroll;
     padding: 0 0 0 0;
     background-color: black;
 }
@@ -994,8 +993,8 @@ section#portfolio div div div {
 
 .hobby-list li {
     float: left;
-    height: 291px;
-    width: 291px;
+    height: 288px;
+    width: 288px;
     overflow: hidden;
     padding: 0 1px 1px 0;
     
