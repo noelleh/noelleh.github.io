@@ -251,7 +251,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 header {
-    background-image:url("/Users/noellehsieh/Desktop/noelleh.github.io/img/aboutme-background.jpg");
+    background-image:url("http://noelleh.github.io/img/aboutme-background.jpg");
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
