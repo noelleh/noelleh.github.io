@@ -251,7 +251,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 header {
-    background-image:url("http://noelleh.github.io/img/aboutme-background.jpg");
+    background-image:url("http://noelleh.github.io/img/aboutme_background.jpg");
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -1071,6 +1071,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+/* Skills Bar Section */
 ul {
   list-style: none;
   margin: 0;
@@ -1157,6 +1159,21 @@ p{
     line-height:35px;
     color:#ffffff;
     color:rgba(0, 0, 0, 0.4);
+}
+
+/* Education Section */
+#education {
+    background-image: url(../img/education/ubc_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#education h4,
+#education h5 {
+    text-transform: capitalize;
+    color: #ffffff;
 }
 
 
