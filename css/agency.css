@@ -29,7 +29,7 @@ a.active {
 }
 
 a {
-    color: #fed136
+    color: #c09f80
 }
 
 a:hover,
@@ -113,8 +113,8 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     color: #fff;
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: #76323f;
+    border-color: #76323f;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -129,8 +129,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01
+    background-color: #c09f80;
+    border-color: #c09f80;
 }
 
 .btn-xl:active,
@@ -155,21 +155,21 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
     background-color: #fed136;
-    border-color: #fed136
+    border-color: #fed136;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #76323f;
     background-color: #fff
 }
 
 .navbar-default {
-    background-color: #222;
+    background-color: #424242;
     border-color: transparent
 }
 
 .navbar-default .navbar-brand {
-    color: #fed136;
+    color: #c09f80;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
 }
 
@@ -177,7 +177,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503
+    color: #76323f;
 }
 
 .navbar-default .navbar-collapse {
@@ -185,17 +185,17 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136
+    background-color: #76323f;
+    border-color: #76323f;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff
+    background-color: #fff;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136
+    background-color: #76323f;
 }
 
 .navbar-default .nav li a {
@@ -208,20 +208,20 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    color: #fed136;
+    color: #c09f80;
     outline: 0
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136
+    background-color: #76323f;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503
+    background-color: ##76323f;
 }
 
 @media (min-width:768px) {
@@ -243,7 +243,7 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px
     }
     .navbar-default.navbar-shrink {
-        background-color: #222;
+        background-color: #424242;
         padding: 10px 0
     }
     .navbar-default.navbar-shrink .navbar-brand {
@@ -473,7 +473,7 @@ section h3.section-subheading {
     background-color: #fed136;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #76323f;
     text-align: center
 }
 
@@ -693,7 +693,8 @@ footer span.copyright {
     line-height: 40px;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    text-transform: none
+    text-transform: none;
+    color: #c09f80;
 }
 
 footer ul.quicklinks {
@@ -701,7 +702,8 @@ footer ul.quicklinks {
     line-height: 40px;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    text-transform: none
+    text-transform: none;
+    color: #c09f80;
 }
 
 ul.social-buttons {
@@ -726,7 +728,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136
+    background-color: #76323f;
 }
 
 .btn:focus,
@@ -850,7 +852,7 @@ body {
 }
 
 section#aboutme {
-    background-color: #ffece5;
+    background-color: #D7CEC7;
     height: auto;
 }
 
@@ -864,11 +866,11 @@ section#aboutme div.intro-aboutme p {
 }
 
 section#technicalskills {
-    background-color: #CEE3F6
+    background-color: #E7EDEF;
 }
 
 section#portfolio {
-    background-color: #f2ccff;
+    background-color: #E2E4E2;
 }
 
 .portfolio-link img {
@@ -901,7 +903,7 @@ section#portfolio {
 
 
 section#experience {
-    background-color: #ccccff;
+    background-color: #f7eded;
 }
 
 
