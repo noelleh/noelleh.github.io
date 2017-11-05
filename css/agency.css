@@ -29,14 +29,14 @@ a.active {
 }
 
 a {
-    color: #c09f80
+    color: #c09f80;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503
+    color: #c09f80;
 }
 
 h1,
@@ -866,11 +866,11 @@ section#aboutme div.intro-aboutme p {
 }
 
 section#technicalskills {
-    background-color: #E7EDEF;
+    background-color: #eddee1;
 }
 
 section#portfolio {
-    background-color: #E2E4E2;
+    background-color: #E7EDEF;
 }
 
 .portfolio-link img {
@@ -1120,7 +1120,7 @@ p{
     font-weight:bold;
     font-size:13px;
     color:#ffffff;
-    background:#6adcfa;
+    background:#7c4036;
     -webkit-border-top-left-radius:3px;
     -webkit-border-bottom-left-radius:4px;
     -moz-border-radius-topleft:3px;
@@ -1146,7 +1146,7 @@ p{
 .skillbar-bar {
     height:35px;
     width:0px;
-    background:#6adcfa;
+    background:#c17c71;
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
