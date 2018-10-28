@@ -911,16 +911,9 @@ section#hobbies {
     min-height: 800px;
     padding: 0 0 0 0;
     background-color: black;
-}
-
-.hobbies-img-horizontal {
-    height: 200px;
-    width: 300px;
-}
-
-.hobbies-img-vertical {
-    height: 300px;
-    width: 220px;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* Animation Part */
@@ -989,22 +982,6 @@ section#portfolio div div div {
 
 /* Picture Section */
 @import "compass/css3";
-
-.hobby-list {
-  position: absolute;
-  left: -15px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-.hobby-list li {
-    float: left;
-    height: 288px;
-    width: 288px;
-    overflow: hidden;
-    padding: 0 1px 1px 0;
-    
-}
   
 .hobby-list a,
 .hobby-list button {
@@ -1015,32 +992,42 @@ section#portfolio div div div {
     position: relative;
 }
 
-.tile-primary-content,
-.tile-secondary-content {
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
+.tile-primary-content {
+    margin: 0 0px;
+    right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tile-primary-content .hobbies-item {
+    display: block;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
 }
 
 .tile-primary-content img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    max-height: 260px;
+    max-width: 260px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .extra {
     text-align: center;
-    margin-top: 80%;
+    top: 80%;
     width: 100%;
+    left: 0px;
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
     font-size: 25px;
     opacity: 0;
+    color: white;
 }
 
 .tile-primary-content:hover img {
